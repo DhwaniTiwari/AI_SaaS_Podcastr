@@ -129,7 +129,7 @@ const AudioPlayer = () => {
                 </div>
 
                 <div className="flex items-center gap-6 max-md:hidden">
-                    <h2 className="text-16 text-white-1 font-semibold">1x</h2>
+                    <h2 className="text-base text-white-1 font-semibold">1x</h2>
                     <div
                         className="flex items-center gap-2 cursor-pointer"
                         onClick={toggleMute}

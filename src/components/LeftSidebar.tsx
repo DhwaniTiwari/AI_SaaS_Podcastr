@@ -43,7 +43,7 @@ const LeftSidebar = () => {
                         >
                             <Icon className={cn("size-6", isActive ? "text-white" : "text-gray-400")} />
                             <p
-                                className={cn("text-16 font-semibold text-white-1 max-lg:hidden", {
+                                className={cn("text-base font-semibold text-white-1 max-lg:hidden", {
                                     "text-white": isActive,
                                     "text-gray-400": !isActive,
                                 })}
@@ -57,14 +57,14 @@ const LeftSidebar = () => {
 
             <SignedOut>
                 <div className="flex-center w-full pb-14 max-lg:px-4 lg:pr-8">
-                    <Button asChild className="text-16 w-full bg-orange-1 font-extrabold">
+                    <Button asChild className="text-base w-full bg-orange-1 font-extrabold">
                         <Link href="/sign-in">Sign In</Link>
                     </Button>
                 </div>
             </SignedOut>
             <SignedIn>
                 <div className="flex-center w-full pb-14 max-lg:px-4 lg:pr-8">
-                    <Button className="text-16 w-full bg-orange-1 font-extrabold" onClick={() => signOut(() => router.push('/'))}>
+                    <Button className="text-base w-full bg-orange-1 font-extrabold" onClick={() => signOut(() => router.push('/'))}>
                         Log Out
                     </Button>
                 </div>

@@ -45,7 +45,7 @@ const PodcastDetails = ({ params }: PodcastDetailsPageProps) => {
                         height={24}
                         alt="headphone"
                     />
-                    <h2 className="text-16 font-bold text-white-1">{podcast?.views}</h2>
+                    <h2 className="text-base font-bold text-white-1">{podcast?.views}</h2>
                 </figure>
             </header>
 
@@ -59,12 +59,12 @@ const PodcastDetails = ({ params }: PodcastDetailsPageProps) => {
                             height={20}
                             alt="profile"
                         />
-                        <h2 className="text-16 font-normal text-white-3">{podcast?.author}</h2>
+                        <h2 className="text-base font-normal text-white-3">{podcast?.author}</h2>
                     </figure>
                 </div>
 
                 <div className="flex w-full flex-col gap-4">
-                    <p className="text-16 font-normal text-white-2">{podcast?.description}</p>
+                    <p className="text-base font-normal text-white-2">{podcast?.description}</p>
                 </div>
             </div>
 
@@ -83,7 +83,7 @@ const PodcastDetails = ({ params }: PodcastDetailsPageProps) => {
                         ))}
                     </div>
                 ) : (
-                    <p className="text-16 font-normal text-white-2">No similar podcasts found</p>
+                    <p className="text-base font-normal text-white-2">No similar podcasts found</p>
                 )}
             </section>
         </section>

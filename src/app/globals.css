@@ -139,7 +139,7 @@
   }
 
   .input-class {
-    @apply text-16 placeholder:text-16 bg-black-1 rounded-[6px] placeholder:text-gray-1 border-none text-white-1;
+    @apply text-base placeholder:text-base bg-black-1 rounded-[6px] placeholder:text-gray-1 border-none text-white-1;
   }
 
   .podcast_grid {

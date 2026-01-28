@@ -35,7 +35,7 @@ export default function Discover() {
                                 ))}
                             </div>
                         ) : (
-                            <div className="text-white-1 font-bold text-16 text-center pt-24">No results found</div>
+                            <div className="text-white-1 font-bold text-base text-center pt-24">No results found</div>
                         )}
                     </>
                 ) : (

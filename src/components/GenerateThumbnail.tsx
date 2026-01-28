@@ -90,7 +90,7 @@ const GenerateThumbnail = ({ setImage, setImageStorageId, image, imagePrompt, se
             {isAiThumbnail ? (
                 <div className="flex flex-col gap-5 mt-5">
                     <div className="flex flex-col gap-2.5">
-                        <Label className="text-16 font-bold text-white-1">
+                        <Label className="text-base font-bold text-white-1">
                             AI Prompt to generate Thumbnail
                         </Label>
                         <Textarea
@@ -104,7 +104,7 @@ const GenerateThumbnail = ({ setImage, setImageStorageId, image, imagePrompt, se
                     <div className="w-full max-w-[200px]">
                         <Button
                             type="button"
-                            className="text-16 bg-orange-1 py-4 font-bold text-white-1"
+                            className="text-base bg-orange-1 py-4 font-bold text-white-1"
                             onClick={generateImage}
                             disabled={isImageLoading}
                         >
@@ -130,7 +130,7 @@ const GenerateThumbnail = ({ setImage, setImageStorageId, image, imagePrompt, se
                     {!isImageLoading ? (
                         <Image src="/icons/upload-image.svg" width={40} height={40} alt="upload" />
                     ) : (
-                        <div className="text-16 flex-center font-medium text-white-1">
+                        <div className="text-base flex-center font-medium text-white-1">
                             Uploading
                             <Loader size={20} className="animate-spin ml-2" />
                         </div>

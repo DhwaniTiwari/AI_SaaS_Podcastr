@@ -106,7 +106,7 @@ const CreatePodcast = () => {
                             name="podcastTitle"
                             render={({ field }) => (
                                 <FormItem className="flex flex-col gap-2.5">
-                                    <FormLabel className="text-16 font-bold text-white-1">Username</FormLabel>
+                                    <FormLabel className="text-base font-bold text-white-1">Username</FormLabel>
                                     <FormControl>
                                         <Input className="input-class focus-visible:ring-offset-orange-1" placeholder="JSM Pro Podcast" {...field} />
                                     </FormControl>
@@ -115,12 +115,12 @@ const CreatePodcast = () => {
                             )}
                         />
                         <div className="flex flex-col gap-2.5">
-                            <Label className="text-16 font-bold text-white-1">Select AI Voice</Label>
+                            <Label className="text-base font-bold text-white-1">Select AI Voice</Label>
                             <Select onValueChange={(value) => setVoiceType(value)}>
-                                <SelectTrigger className={cn('text-16 w-full text-white-1 border-none bg-black-1 focus:ring-offset-orange-1')}>
+                                <SelectTrigger className={cn('text-base w-full text-white-1 border-none bg-black-1 focus:ring-offset-orange-1')}>
                                     <SelectValue placeholder="Select AI Voice" className="placeholder:text-gray-1" />
                                 </SelectTrigger>
-                                <SelectContent className="text-16 border-none bg-black-1 font-bold text-white-1 focus:ring-orange-1">
+                                <SelectContent className="text-base border-none bg-black-1 font-bold text-white-1 focus:ring-orange-1">
                                     {voiceCategories.map((voice) => (
                                         <SelectItem key={voice} value={voice} className="capitalize focus:bg-orange-1">
                                             {voice}
@@ -143,7 +143,7 @@ const CreatePodcast = () => {
                             name="podcastDescription"
                             render={({ field }) => (
                                 <FormItem className="flex flex-col gap-2.5">
-                                    <FormLabel className="text-16 font-bold text-white-1">Description</FormLabel>
+                                    <FormLabel className="text-base font-bold text-white-1">Description</FormLabel>
                                     <FormControl>
                                         <Textarea className="input-class focus-visible:ring-offset-orange-1" placeholder="Write a short podcast description" {...field} />
                                     </FormControl>
@@ -173,7 +173,7 @@ const CreatePodcast = () => {
                         />
 
                         <div className="mt-10 w-full">
-                            <Button type="submit" className="text-16 w-full bg-orange-1 py-4 font-extrabold text-white-1 transition-all duration-500 hover:bg-black-1" disabled={isSubmitting}>
+                            <Button type="submit" className="text-base w-full bg-orange-1 py-4 font-extrabold text-white-1 transition-all duration-500 hover:bg-black-1" disabled={isSubmitting}>
                                 {isSubmitting ? (
                                     <>
                                         Submitting

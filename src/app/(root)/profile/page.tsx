@@ -40,7 +40,7 @@ const Profile = () => {
                 </div>
                 <div className="flex flex-col justify-center max-md:items-center">
                     <h1 className="text-32 font-extrabold text-white-1">{user.fullName}</h1>
-                    <h2 className="text-16 font-normal text-white-1">@{user.username || 'user'}</h2>
+                    <h2 className="text-base font-normal text-white-1">@{user.username || 'user'}</h2>
                 </div>
             </div>
 
@@ -59,7 +59,7 @@ const Profile = () => {
                         ))}
                     </div>
                 ) : (
-                    <p className="text-16 font-normal text-white-2">You have not created any podcasts yet</p>
+                    <p className="text-base font-normal text-white-2">You have not created any podcasts yet</p>
                 )}
             </section>
         </section>

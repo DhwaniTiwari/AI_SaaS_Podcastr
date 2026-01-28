@@ -52,7 +52,7 @@ const MobileNav = () => {
                                                 )}
                                             >
                                                 <Icon className={cn("size-6", isActive ? "text-white" : "text-gray-400")} />
-                                                <p className={cn("text-16 font-semibold text-white-1", { "text-white": isActive, "text-gray-400": !isActive })}>{label}</p>
+                                                <p className={cn("text-base font-semibold text-white-1", { "text-white": isActive, "text-gray-400": !isActive })}>{label}</p>
                                             </Link>
                                         </SheetClose>
                                     );

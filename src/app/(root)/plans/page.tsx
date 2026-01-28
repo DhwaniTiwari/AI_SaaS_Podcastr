@@ -86,7 +86,7 @@ const Plans = () => {
                                         height={24}
                                         alt="check"
                                     />
-                                    <p className="text-16 font-normal text-white-2">{feature}</p>
+                                    <p className="text-base font-normal text-white-2">{feature}</p>
                                 </div>
                             ))}
                         </div>
